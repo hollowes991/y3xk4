@@ -1,0 +1,22 @@
+html,body{margin:0;padding:0;overflow: hidden;}.page-wrapper{width:100%;height:100%;color:#f5f5f5;overflow: hidden;}
+.header{position: absolute;left:0;top:0; margin: 45px;width:30%;}.logo > img{width:300px;}
+.header p, .opening p{text-align: justify;}
+.menu{width:40%;height:45%;position:absolute;bottom:0;background:transparent;}
+.menu__item{display:inline-block;margin-bottom:15px;-webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);cursor: pointer;}
+.menu__item.is-selected{background:yellow;}
+.menu__item > img{width:200px;overflow: hidden;transform:scale(1.1,1.1);}
+.menu__item:hover img, .menu__item.is-selected img{transform:scale(1.2,1.2);}
+.main-content{width:100vw;height:100vh;}
+.story{background:transparent;height:100%;}
+.opening{position: absolute;width:50%;right:0;color:#f5f5f5;padding:140px 70px;}
+.opening h3{font-size: 72px;}
+.story_ind{position:absolute;width:100%;height:100%;top:0;z-index: -1;overflow:hidden;transition:opacity .3s ease-in-out;}
+.story_ind.is-active{top:0;z-index:1;-webkit-clip-path: polygon(45% 0%, 100% 0, 100% 100%, 45% 100%, 30% 50%);clip-path: polygon(45% 0%, 100% 0, 100% 100%, 45% 100%, 30% 50%);}
+.story_ind #story_ind__content{width:100%;height:100%;opacity: 0;transition:all .5s ease-in-out;left:100%;}
+.story_ind.is-active #story_ind__content{opacity:1;left:0;}
+.story__close{cursor: pointer;}.story__close span{transition:all .3s ease-in-out;opacity:0;transform:rotate(0deg);}
+.story__close.is-active span{content:'';width: 30px;border:3px solid #fff;border-radius:30px;position:absolute;top:50%;left:31%;opacity:1;}
+.story__close.is span:nth-child(1){top:60%;}.story__close.is span:nth-child(2){top:40%;}
+.story__close.is-active span:nth-child(1){transform:rotate(-45deg);top:50%;}.story__close.is-active span:nth-child(2){transform:rotate(45deg);transition:all .5s ease-in-out;top:50%;}
+canvas{ display: block; vertical-align: bottom; } 
+#particles-js{position:absolute;width: 100%;height: 100%;background-color: #000000;background-repeat: no-repeat; background-size:20%; background-position: 50% 50%; } 
